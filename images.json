@@ -1,0 +1,26 @@
+[
+		{
+			"imgSrc": "Africans.jpg",
+			"imgAlt": "Africans",
+			"carouselCaption": "",
+			"active": true
+		},
+		{
+			"imgSrc": "Allemagne.jpg",
+			"imgAlt": "Allemagne",
+			"carouselCaption": "",
+			"active": false
+		},
+		{
+			"imgSrc": "France.jpg",
+			"imgAlt": "logocup",
+			"carouselCaption": "",
+			"active": false
+		},
+		{
+			"imgSrc": "Angleterre.jpg",
+			"imgAlt": "logocup",
+			"carouselCaption": "",
+			"active": false
+		}
+]

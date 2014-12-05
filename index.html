@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with=device-width, inital-scale=1.0">
+            <title>The fantastic PONG Project!</title>
+            <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+            <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+            <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+     </head>
+  <body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="." id="home">Pong Project!</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li id="accueil"><a href="#">Home</a></li>
+            <li id="equipes"><a href="#">People</a></li>
+            <li id="boutique"><a href="#">Medical</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Groupes <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li id="groupeA"><a href="#">Groupe A</a></li>
+                <li id="groupeB"><a href="#">Groupe B</a></li>
+                <li id="groupeC"><a href="#">Groupe C</a></li>
+                <li id="groupeD"><a href="#">Groupe D</a></li>
+                <li id="groupeE"><a href="#">Groupe E</a></li>
+                <li id="groupeF"><a href="#">Groupe F</a></li>
+                <li id="groupeG"><a href="#">Groupe G</a></li>
+                <li id="groupeH"><a href="#">Groupe H</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <!-- Formulaire de connection et d'inscription -->
+          <form id="enregistrement" class ="navbar-form navbar-right" role="form" method="post" action="enregistrement.php">
+          	<button type="subscribe" class="btn btn-primary">Subscribe</button>
+          </form>
+
+          <form id="connection" class="navbar-form navbar-right" role="form" method="post" action="post.php">
+            <div class="form-group">
+              <input placeholder="Email" class="form-control" type="email" name="username">
+            </div>
+            <div class="form-group">
+              <input placeholder="Mot de passe" class="form-control" type="password" name="password">
+            </div>
+              <button type="submit" class="btn btn-success">Log In</button>
+          </form>
+              
+            <form method="post">
+              <ul id="btndeconnexion" class="navbar-form navbar-right">
+                <li><a href="./" type="submit" name="action" value="logout" method="post">
+                	<button type="button" class="btn btn-default btn-lg">
+                  		<span class="glyphicon glyphicon-log-out"></span> Log Out
+                	</button></a>
+                </li>
+              </ul>
+            </form>
+
+        
+        
+          <ul id="btnmobile" class="navbar-form navbar-right">
+           <li><a href="mobile.html" type="submit" name="action" method="post">
+            <button type="button" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-phone"></span>
+              </button></a>
+            </li>
+          </ul>
+  
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="jumbotron">
+      <div id="banniere-centrale" class="container">       
+      </div>
+    </div>
+    <div id="result"></div>
+    <div class="container">
+      <!-- Trois articles -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Ebola</h2>
+          <p>For several months the Ebola epidemic is spreading in our world. Healths organizations were quickly overtaken by events , what can we do to respond faster? </p>
+          <p><a class="btn btn-default" href="#" role="button">Voir les details »</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Vaccination</h2>
+          <p>Recent research has proven that the vaccine against influenza reduces the chances of being infected with the Ebola virus.</p>
+          <p><a class="btn btn-default" href="#" role="button">Voir les details »</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>La France revient de loin</h2>
+          <p>Après avoir frôlé l'élimination la France a du passer par les barrages afin d'obtenir son ticket. C'est en battant l'Ukraine alors qu'elle avait perdu le match aller qu'elle s'est enfin qualifée. Avec à sa tête Didier Deschamps, La France ...</p>
+          <p><a class="btn btn-default" href="#" role="button">Voir les details »</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>© Also Sprach Vermeille <br>
+        E.P.I.T.A. <br>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="jquery-2.1.1.min.js"></script>
+<!--    <script src="http://code.jquery.com/jquery-latest.js"></script>-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</html>
